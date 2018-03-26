@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.andrewmcclary.callback_workshop.MainActivity">
+
+    <Button
+        android:id="@+id/button_callback_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Run toast method from activity"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/button_change_message_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Activity Textview"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button_callback_toast"
+        app:layout_constraintBottom_toTopOf="@+id/button_callback_change_backround_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/button_callback_change_backround_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Activity Backround Color"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/button_change_activity_textview"
+        app:layout_constraintBottom_toTopOf="@+id/button_remove_fragment_from_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/button_remove_fragment_from_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REmove Fragment from Activity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>
